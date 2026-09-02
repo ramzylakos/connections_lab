@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 25;
+}
+
+p {
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding-left: 250;
+    padding-right: 250;
+    padding-top: 25;
+}
+
+.row {
+  display: flex;
+   justify-content: center;   
+    align-items: center;       
+    gap: 20px;       
+}
+
+#sketch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
