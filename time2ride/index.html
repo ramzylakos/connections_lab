@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME2RIDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>TIME2RIDE</h1>
+        <h3>What to do and when to do it for horseback riders. <br>We track the equestrian essentials so you don't have to.</h3>
+    </div>
+
+    <div class="container">
+        <p> time to: <span class="auto-type"></span></p>
+    </div>
+
+    <div class="section_2">
+        <div>
+            <p class="track">How do we know what time it is? <br></p>
+            <p class="description">We track location, elevation, hydration levels,<br> emotional state, tides, star maps, weather,<br>volcanic activity, stamina, and route.<br><br>We synthesize all this information and give <br>you one simple direction: time to ride.</p>
+        </div>
+        <div>
+            <p class="track">Ready to ride?</p>
+            <button type="button" onclick="document.getElementById('horse').classList.toggle('ride')">Yeeeeehaw</button>
+        </div>
+    </div>
+
+    <div class="race">
+        <span class="emoji" id="horse">🐎</span>
+    </div>
+
+   
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["saddle up", "eat an apple", "eat a sugar cube", "graze", "find shelter", "RIDE"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
