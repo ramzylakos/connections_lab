@@ -1,0 +1,55 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  cursor: pointer;
+  padding: 15vh 8vw 40vh;
+  text-align: center;
+}
+
+.line {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.line.in {
+  opacity: 1;
+}
+
+.line.fading {
+  opacity: 0.08;
+  transition: opacity 3s;
+}
+
+.part-b {
+  color: #b8a9ff;
+}
+
+#hint {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+#container {
+  position: relative;
+  z-index: 1;
+}
+
+#clock {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vmin;
+  height: 70vmin;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
