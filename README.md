@@ -1,1 +1,1 @@
-projects from my connections lab class
+projects for my connections lab class
