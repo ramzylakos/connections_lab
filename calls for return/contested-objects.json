@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1",
+    "object title": "Benin Bronzes",
+    "description": "More than 900 bronze plaques, sculptures and other objects looted from the Kingdom of Benin (in modern-day Nigeria) when British troops attacked Benin City in 1897. Many were later sold on to museums and collectors.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/benin-bronzes",
+    "requested for return": "1960, 1972, 2018, 2023",
+    "reasons they haven't": "The British Museum Act 1963 stops trustees from permanently giving away objects in the collection. The museum has offered loans to Nigeria instead, and has raised concerns about whether suitable facilities exist to house them.",
+    "date taken": "1897",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      6.33214664,
+      5.62034163
+    ],
+    "image": "benin_bronze.jpg",
+    "from name": "British Museum, London",
+    "to name": "Benin City"
+  },
+  {
+    "id": "2",
+    "object title": "Moai",
+    "description": "Two statues from Rapa Nui (Easter Island), including Hoa Hakananai'a, taken in 1868 by the crew of a British survey ship. Rapa Nui islanders regard it as an ancestor figure.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/moai",
+    "requested for return": "2018",
+    "reasons they haven't": "The museum cites the British Museum Act 1963 and its role as a \"universal museum\" that shares world heritage with a global audience. Some argue Rapa Nui has fewer resources to care for the statue, and the museum has reportedly agreed only to a loan.",
+    "date taken": "1868",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      -27.11441,
+      -109.42527
+    ],
+    "image": "moai.jpg",
+    "from name": "British Museum, London",
+    "to name": "Easter Island (Rapa Nui)"
+  },
+  {
+    "id": "3",
+    "object title": "The Parthenon Sculptures",
+    "description": "Marble sculptures from the Parthenon temple in Athens, removed by Lord Elgin between 1801 and 1805 and sold to the British Museum in 1816. Whether Elgin had proper permission to take them is disputed.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/parthenon-sculptures",
+    "requested for return": "1835, 1982, 1998, 2021",
+    "reasons they haven't": "The museum cites the British Museum Act 1963 and its role as a \"universal museum\". It argues that Elgin removed much of the frieze from rubble with permission, a claim Greece rejects, and it fears a precedent for claims on other objects.",
+    "date taken": "1801",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      37.96846,
+      23.728373
+    ],
+    "image": "parthenon_horse.webp",
+    "from name": "British Museum, London",
+    "to name": "Athens, Greece"
+  },
+  {
+    "id": "4",
+    "object title": "Asante Gold Regalia",
+    "description": "Gold ornaments, regalia and other objects taken from the Asante Kingdom (in modern-day Ghana), mostly during British military expeditions to Kumasi in 1874 and 1896. Many were symbols of royal and spiritual authority.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/asante-gold",
+    "requested for return": "Asante leaders have pressed for return over many decades, most recently ahead of the 2024 loan agreement",
+    "reasons they haven't": "The British Museum Act 1963 stops trustees from permanently giving away objects. In 2024 the British Museum and the V&A agreed a three-year loan (renewable) of items to the Manhyia Palace Museum in Kumasi, rather than a transfer of ownership.",
+    "date taken": "1874",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      6.6885,
+      -1.6244
+    ],
+    "image": "asante_gold.webp",
+    "from name": "British Museum, London",
+    "to name": "Kumasi, Ghana"
+  },
+
+  {
+    "id": "6",
+    "object title": "The Maqdala Collection",
+    "description": "Objects taken after the British expedition to Maqdala (Magdala) in Ethiopia in 1868, including manuscripts, crosses, crowns and sacred tabots. Soldiers carried away so many items that dozens of elephants and hundreds of mules were needed to transport them.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/maqdala-collection",
+    "requested for return": "1872, 2007, 2018",
+    "reasons they haven't": "The British Museum Act 1963 prevents permanent return, and the museum has pointed to loans as the alternative. The tabots (sacred altar tablets) are not displayed, but the museum has said it is open to discussing their future with Ethiopian authorities.",
+    "date taken": "1868",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      11.0833,
+      39.3667
+    ],
+    "image": "maqdala_collection.webp",
+    "from name": "British Museum, London",
+    "to name": "Maqdala (Meqdela), Ethiopia"
+  },
+  {
+    "id": "7",
+    "object title": "The Australia Shield",
+    "description": "A bark shield with a hole near its centre, collected in 1770 when Captain Cook's crew landed at Botany Bay (Kamay) in what is now Sydney. Gweagal people say it belonged to a warrior who resisted the landing.",
+    "museum link": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/gweagal-shield",
+    "requested for return": "2015",
+    "reasons they haven't": "The museum cites the British Museum Act 1963 and says it is uncertain whether the shield was involved in the 1770 encounter. It lent the shield to the National Museum of Australia in 2015, but has not agreed to return it to the Gweagal descendants who requested it.",
+    "date taken": "1770",
+    "from": [
+      51.518757,
+      -0.126168
+    ],
+    "to": [
+      -34.0,
+      151.21
+    ],
+    "image": "shield.webp",
+    "from name": "British Museum, London",
+    "to name": "Botany Bay (Kamay), Australia"
+  }
+]

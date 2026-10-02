@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #111;
+    background: #F9F6EF;
+    line-height: 1.4;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 32px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* ---------- left column ---------- */
+h1 {
+    margin: 0 0 12px;
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+
+.page-header {
+    max-width: 1300px;
+    margin: 0 auto 24px;
+}
+
+.intro {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+#map {
+    width: 100%;
+    height: 560px;
+    background: #fff;
+}
+
+/* ---------- right column ---------- */
+.panel {
+    position: sticky;
+    top: 32px;
+    min-height: 620px;
+    padding: 28px;
+}
+
+.panel .placeholder {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+.panel-top {
+    display: grid;
+    grid-template-columns: 1fr minmax(120px, 40%);
+    gap: 24px;
+    align-items: start;
+}
+
+.panel h2 { margin: 0 0 16px; font-size: 2.2rem; line-height: 1.1; }
+.panel h3 { margin: 28px 0 8px; font-size: 1.25rem; }
+.panel p  { margin: 0; font-size: 1.15rem; }
+
+.panel img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.panel .more { margin-top: 28px; }
+.panel .more a { color: #111; }
+.panel .more a:focus-visible { outline: 3px solid #8b0000; outline-offset: 2px; }
+
+/* Leaflet: show a pointer over the clickable lines */
+.leaflet-interactive { cursor: pointer; }
+
+@media (max-width: 900px) {
+    body { padding: 16px; }
+    .layout { grid-template-columns: 1fr; }
+    .panel { position: static; min-height: 0; }
+    #map { height: 420px; }
+}
+
+/* City labels on the map */
+.city-label {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #111;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+.city-label::before { display: none; }
