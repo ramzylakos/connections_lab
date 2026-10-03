@@ -18,7 +18,7 @@ body {
     align-items: start;
 }
 
-/* ---------- left column ---------- */
+/* left column */
 h1 {
     margin: 0 0 12px;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ h1 {
     background: #fff;
 }
 
-/* ---------- right column ---------- */
+/* right column */
 .panel {
     position: sticky;
     top: 32px;
