@@ -1,6 +1,7 @@
-// Creates map, centered somewhere in the Atlantic
+// Creates map, centered over a lil below London
 let map = L.map('map').setView([10, 0], 2);
 
+// map source
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     subdomains: 'abcd',
@@ -43,8 +44,8 @@ function animate(time) {
 }
 
 // Add a dot and a text label for a city.
-// alwaysShow = true  -> label is visible all the time (the British Museum)
-// alwaysShow = false -> label starts hidden and is opened when its line is clicked
+// alwaysShow = true means label is visible all the time (the British Museum)
+// alwaysShow = false means label starts hidden and is opened when its line is clicked
 function addCity(name, latlng, alwaysShow) {
     if (alwaysShow) {
         if (labelledCities.includes(name)) return null; // only draw London once
@@ -59,7 +60,7 @@ function addCity(name, latlng, alwaysShow) {
     return marker;
 }
 
-// 
+// info panel
 function showObject(obj) {
     panel.innerHTML = `
         <div class="panel-top">
@@ -111,14 +112,14 @@ fetch('contested-objects.json')
             // The visible line (it ignores the mouse)
             let line = L.curve(path, { ...normalStyle, interactive: false }).addTo(map);
 
-            // A wider, invisible copy on top the mouse can catch
+            // A wider, invisible copy on top so its easier to click
             let hitArea = L.curve(path, { color: 'brown', weight: 16, opacity: 0 }).addTo(map);
 
             // Dots and labels at both ends: only London is labelled up front
             addCity(obj['from name'], start, true);
             let cityMarker = addCity(obj['to name'], end, false);
 
-            // Click: un-highlight the old line, highlight this one, show its info and city label
+            // On a click, un-highlight the old line, highlight this one, show its info and city label
             hitArea.on('click', () => {
                 if (selectedLine) selectedLine.setStyle(normalStyle);
                 if (selectedMarker) selectedMarker.closeTooltip();
@@ -129,11 +130,11 @@ fetch('contested-objects.json')
                 showObject(obj);
             });
 
-            // Hover: thicken the line, unless it is the selected one
+            // Thicken the line when you hover over it, unless it is the selected one
             hitArea.on('mouseover', () => { if (line !== selectedLine) line.setStyle({ color: 'brown', weight: 2 }); });
             hitArea.on('mouseout', () => { if (line !== selectedLine) line.setStyle(normalStyle); });
 
-            // A ping: a solid dot plus an expanding ring, both starting at the city
+            // Ping things, solid dot plus an expanding ring, both starting at the city
             let dot = L.circleMarker(end, { radius: 2, color: '#8b0000', fillColor: '#8b0000', fillOpacity: 1, interactive: false }).addTo(map);
             let ring = L.circleMarker(end, { radius: 2, color: '#8b0000', weight: 2, fill: false, interactive: false }).addTo(map);
 
